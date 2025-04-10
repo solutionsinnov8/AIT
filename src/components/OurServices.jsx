@@ -32,11 +32,7 @@ const services = [
     description: "We provide high-quality robotic equipment and drones for industrial automation and specialized applications, backed by local R&D to deliver custom.",
     icon: <FaRobot className="text-4xl mx-auto" />,
   },
-  {
-    title: "Specialized Products",
-    description: "We offer specialized products like LiDAR surveillance stations, smart weather stations, and rugged equipment for critical applications, ensuring advanced monitoring",
-    icon: <FaBoxes className="text-4xl mx-auto" />,
-  },
+  
 ];
 
 const OurServices = () => {
