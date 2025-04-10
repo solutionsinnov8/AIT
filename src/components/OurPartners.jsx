@@ -1,34 +1,50 @@
+
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';  // Import Swiper styles
-import { Autoplay, Navigation, Pagination } from 'swiper'; // Import required modules
+import Slider from 'react-slick'; // Import react-slick
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // For custom next/previous arrows
 
 const OurPartners = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,  // Show 5 logos at a time
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerMode: true, // This helps in adding space between the images
+    focusOnSelect: true,  // Allows image selection
+    nextArrow: <FaArrowRight className="slick-next custom-arrow " />,  // Custom next arrow
+    prevArrow: <FaArrowLeft className="slick-prev custom-arrow" />,   // Custom previous arrow
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3, // Show 3 logos on smaller screens
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1, // Show 1 logo on mobile
+        }
+      }
+    ]
+  };
+
   return (
     <section id="partners" className="py-20 px-6 md:px-12 bg-[#f4f7fa]">
       <div className="max-w-5xl mx-auto">
-        <Swiper
-          spaceBetween={50}
-          slidesPerView={5}
-          loop={true}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 3 },
-            1024: { slidesPerView: 5 },
-          }}
-          modules={[Autoplay, Navigation, Pagination]} // Use the modules array to pass modules
-        >
-          <SwiperSlide><img src="/img2.jpeg" alt="Partner 1" className="w-full object-contain" /></SwiperSlide>
-          <SwiperSlide><img src="/img2.jpeg" alt="Partner 2" className="w-full object-contain" /></SwiperSlide>
-          <SwiperSlide><img src="/img2.jpeg" alt="Partner 3" className="w-full object-contain" /></SwiperSlide>
-          <SwiperSlide><img src="/img2.jpeg" alt="Partner 4" className="w-full object-contain" /></SwiperSlide>
-          <SwiperSlide><img src="/img2.jpeg" alt="Partner 5" className="w-full object-contain" /></SwiperSlide>
-          <SwiperSlide><img src="/img2.jpeg" alt="Partner 6" className="w-full object-contain" /></SwiperSlide>
-        </Swiper>
+        <Slider {...settings}>
+          <div className="px-4"><img src="/img2.jpeg" alt="Partner 1" className="w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/img2.jpeg" alt="Partner 2" className="w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/img2.jpeg" alt="Partner 3" className="w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/img2.jpeg" alt="Partner 4" className="w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/img2.jpeg" alt="Partner 5" className="w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/img2.jpeg" alt="Partner 6" className="w-full object-contain rounded-lg shadow-lg" /></div>
+        </Slider>
       </div>
     </section>
   );

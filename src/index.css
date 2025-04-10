@@ -2,3 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Style for the custom arrows */
+.custom-arrow {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background */
+    color: white; /* White color for the arrow icons */
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slick-prev {
+    left: -30px;
+    color: #c71625 !important;
+  }
+  
+  .slick-next {
+    right: -30px;
+    color: #c71625 !important;
+  }
+  
+  .slick-prev, .slick-next {
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white; /* Ensure the arrows are white */
+  }
+  
+  /* Optional: Add a hover effect for better interactivity */
+  .slick-prev:hover, .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+  }
+  
