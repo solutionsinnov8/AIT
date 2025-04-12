@@ -20,14 +20,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <nav className="bg-[#021D3B] border-b border-white text-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="text-2xl font-bold text-blue-600">
-          AIT
+          <img src="/logo2.png" alt="" className='w-[100px] '  />
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <ul className="hidden md:flex space-x-8  font-medium">
           {navItems.map((item) => (
             <li
               key={item.id}

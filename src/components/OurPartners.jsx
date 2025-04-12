@@ -37,13 +37,13 @@ const OurPartners = () => {
   return (
     <section id="partners" className="py-20 px-6 md:px-12 bg-[#f4f7fa]">
       <div className="max-w-5xl mx-auto">
-        <Slider {...settings}>
-          <div className="px-4"><img src="/img2.jpeg" alt="Partner 1" className="w-full object-contain rounded-lg shadow-lg" /></div>
-          <div className="px-4"><img src="/img2.jpeg" alt="Partner 2" className="w-full object-contain rounded-lg shadow-lg" /></div>
-          <div className="px-4"><img src="/img2.jpeg" alt="Partner 3" className="w-full object-contain rounded-lg shadow-lg" /></div>
-          <div className="px-4"><img src="/img2.jpeg" alt="Partner 4" className="w-full object-contain rounded-lg shadow-lg" /></div>
-          <div className="px-4"><img src="/img2.jpeg" alt="Partner 5" className="w-full object-contain rounded-lg shadow-lg" /></div>
-          <div className="px-4"><img src="/img2.jpeg" alt="Partner 6" className="w-full object-contain rounded-lg shadow-lg" /></div>
+        <Slider {...settings} className="">
+          <div className="px-4"><img src="/images/2.png" alt="Partner 1" className=" w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/images/3.png" alt="Partner 2" className=" w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/images/4.webp" alt="Partner 3" className=" w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/images/a.png" alt="Partner 4" className=" w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/images/d.jpg" alt="Partner 5" className=" w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/images/h.webp" alt="Partner 6" className=" w-full object-contain rounded-lg shadow-lg" /></div>
         </Slider>
       </div>
     </section>
