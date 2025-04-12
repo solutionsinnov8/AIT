@@ -44,6 +44,14 @@ const OurPartners = () => {
           <div className="px-4"><img src="/images/a.png" alt="Partner 4" className=" w-full object-contain rounded-lg shadow-lg" /></div>
           <div className="px-4"><img src="/images/d.jpg" alt="Partner 5" className=" w-full object-contain rounded-lg shadow-lg" /></div>
           <div className="px-4"><img src="/images/h.webp" alt="Partner 6" className=" w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/images/b.png" alt="Partner 6" className=" w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/images/f.png" alt="Partner 6" className=" w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/images/e.jpg" alt="Partner 6" className=" w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/images/5.png" alt="Partner 6" className=" w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4"><img src="/images/i.png" alt="Partner 6" className=" w-full object-contain rounded-lg shadow-lg" /></div>
+          <div className="px-4 "><img src="/images/images.png" alt="Partner 6" className=" w-full object-contain rounded-lg shadow-lg" /></div>
+
+
         </Slider>
       </div>
     </section>
